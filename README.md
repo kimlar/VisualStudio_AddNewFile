@@ -13,4 +13,4 @@ INSTALLATION:
 - Follow the installation instructions in the "HowToAddNewItem-In-VisualStudio2022.txt" file.
 
 TODO:
-- Update the SourceCPP implement the Rule of Five
+- Implement the Rule of Five in SourceCPP.
