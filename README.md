@@ -7,7 +7,7 @@ Visual Studio add new file templates for streamlining the workflow:
 
 Here is an example of adding a typical C++ class (.cpp and .h) into your project:
 ![alt text](https://github.com/kimlar/VisualStudio_AddNewFile/blob/main/VisualStudio-AddNewFile-2.png "Visual Studio Add New File")
-This reduses a number of steps in order to accomplish this typical task.
+This reduses a number of steps in order to accomplish this typical task. What I really like with this is that you can customize your own files, in this example you can use $safeitemname$ to insert your class name instead of having to do this manually by replacing it with MyClass.
 
 TODO:
 - Update the SourceCPP implement the Rule of Five
