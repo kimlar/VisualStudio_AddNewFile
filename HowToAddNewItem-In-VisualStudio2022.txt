@@ -1,0 +1,51 @@
+HOW TO CREATE AN ADD FILE IN VISUAL STUDIO 2022
+===============================================================================================
+WEBSOURCE: https://learn.microsoft.com/en-us/visualstudio/ide/template-parameters?view=vs-2019
+WEBSOURCE: https://learn.microsoft.com/en-us/visualstudio/ide/how-to-create-item-templates?view=vs-2019#manually-create-an-item-template
+WEBSOURCE: https://learn.microsoft.com/en-us/visualstudio/extensibility/visual-studio-template-schema-reference?view=vs-2019
+WEBSOURCE: https://learn.microsoft.com/en-us/visualstudio/ide/how-to-create-multi-file-item-templates?view=vs-2019
+WEBSOURCE: https://learn.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates?view=vs-2019
+
+
+NOTE: Change {username} to your actually user name
+
+First create an empty folder in:
+											C:\Users\{username}\OneDrive\Dokumenter\Visual Studio 2022\Templates\ItemTemplates
+With the name of your add template name.
+For example like this:
+											C:\Users\{username}\OneDrive\Dokumenter\Visual Studio 2022\Templates\ItemTemplates\SourceC
+
+Add following files into the folder:
+__TemplateIcon.png		<---- Recommend 32x32 size
+MyTemplate.vstemplate	<---- This is the header template file where you describe what and how the add new file should work
+Source.c				<---- This is the C source file added into your project. Note it can do script replacement. I.e: $itemname$.c
+
+
+
+
+Full listing of the files below.
+
+MyTemplate.vstemplate:
+------------------------------------------------------------------------------------------------
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Source.c</DefaultName>
+    <Name>C File (.c)</Name>
+    <Description>Creates a file containing C source code</Description>
+    <ProjectType>VC</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.c" ReplaceParameters="true">Source.c</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
+------------------------------------------------------------------------------------------------
+
+
+Source.c:
+------------------------------------------------------------------------------------------------
+#include "$safeitemname$.h"
+
+------------------------------------------------------------------------------------------------
