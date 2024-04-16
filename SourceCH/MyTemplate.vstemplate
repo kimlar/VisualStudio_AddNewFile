@@ -1,0 +1,15 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>filename</DefaultName>
+    <Name>C pair (.h and .c)</Name>
+    <Description>Creates a C source file and header file (.h and .c)</Description>
+    <ProjectType>VC</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.h" ReplaceParameters="true">Source.h</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.c" ReplaceParameters="true">Source.c</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

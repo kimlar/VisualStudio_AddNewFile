@@ -1,0 +1,14 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Source.c</DefaultName>
+    <Name>C File (.c)</Name>
+    <Description>Creates a file containing C source code</Description>
+    <ProjectType>VC</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.c" ReplaceParameters="true">Source.c</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

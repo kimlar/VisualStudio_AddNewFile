@@ -1,0 +1,15 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>MyClass</DefaultName>
+    <Name>C++ Class (.h and .cpp)</Name>
+    <Description>Creates a file containing C++ class (.h and .cpp)</Description>
+    <ProjectType>VC</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.h" ReplaceParameters="true">Source.h</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.cpp" ReplaceParameters="true">Source.cpp</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
