@@ -7,7 +7,8 @@ WEBSOURCE: https://learn.microsoft.com/en-us/visualstudio/ide/how-to-create-mult
 WEBSOURCE: https://learn.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates?view=vs-2019
 
 
-NOTE: Change {username} to your actually user name
+NOTE 1: Change {username} to your actually user name.
+NOTE 2: Change "Dokumenter" to your localization. I.E: "Documents" for US/English.
 
 First create an empty folder in:
 											C:\Users\{username}\OneDrive\Dokumenter\Visual Studio 2022\Templates\ItemTemplates
