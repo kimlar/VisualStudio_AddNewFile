@@ -5,8 +5,8 @@ Visual Studio add new file templates for streamlining the workflow:
 - SourceCH:  [C]   For adding both a new C-file and H-file in one go
 - SourceCPP: [C++] For adding both a new CPP-file and H-file in one go
 
-Here is an example of adding a typical C++ class (.cpp and .h) into your project:
-![alt text](VisualStudio_AddNewFile/blob/main/VisualStudio-AddNewFile-2.png "Visual Studio Add New File") <br />
+Here is an example of adding a typical C++ class (.cpp and .h) into your project: <br />
+![alt text](VisualStudio-AddNewFile-2.png "Visual Studio Add New File adding both files") <br />
 This reduses a number of steps in order to accomplish this typical task. What I really like with this is that you can customize your own files, in this example you can use $safeitemname$ to insert your class name instead of having to do this manually by replacing it with MyClass.
 
 INSTALLATION:
